@@ -44,5 +44,121 @@
     "en": "English",
     "ro": "Romanian",
     "ru": "Russian"
+  },
+  "Features": {
+    "title": "Why Choose Us",
+    "subtitle": "We provide comprehensive transportation solutions tailored to your needs",
+    "feature1": {
+      "title": "Modern Fleet",
+      "description": "Our trucks are regularly maintained and equipped with the latest technology for safe transport"
+    },
+    "feature2": {
+      "title": "24/7 Availability",
+      "description": "Round-the-clock service to meet your urgent delivery requirements"
+    },
+    "feature3": {
+      "title": "Secure Transport",
+      "description": "Full insurance coverage and GPS tracking for complete peace of mind"
+    },
+    "feature4": {
+      "title": "Wide Coverage",
+      "description": "Extensive network covering major routes across Europe and beyond"
+    },
+    "feature5": {
+      "title": "Competitive Pricing",
+      "description": "Transparent pricing with no hidden fees, guaranteed best value"
+    },
+    "feature6": {
+      "title": "Expert Team",
+      "description": "Professional drivers with years of experience in logistics"
+    }
+  },
+  "Services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive logistics solutions for every transportation need",
+    "service1": {
+      "title": "Long-Distance Transport",
+      "description": "Reliable interstate and international freight services"
+    },
+    "service2": {
+      "title": "Express Delivery",
+      "description": "Fast delivery services for time-sensitive cargo"
+    },
+    "service3": {
+      "title": "Specialized Transport",
+      "description": "Handling of oversized and special cargo with care"
+    },
+    "service4": {
+      "title": "Warehousing",
+      "description": "Secure storage and distribution solutions"
+    }
+  },
+  "Stats": {
+    "title": "Our Impact in Numbers",
+    "subtitle": "Years of excellence in transportation and logistics",
+    "stat1": {
+      "label": "Deliveries Completed"
+    },
+    "stat2": {
+      "label": "Miles Driven"
+    },
+    "stat3": {
+      "label": "Years in Business"
+    },
+    "stat4": {
+      "label": "Customer Satisfaction"
+    }
+  },
+  "CTA": {
+    "title": "Ready to Get Started?",
+    "subtitle": "Contact us today for a free quote and discover how we can help your business grow",
+    "button1": "Get a Quote",
+    "button2": "Call Us Now",
+    "box1": {
+      "title": "Fast Response",
+      "description": "We respond to all inquiries within 24 hours"
+    },
+    "box2": {
+      "title": "Free Consultation",
+      "description": "Get expert advice on your transportation needs"
+    },
+    "box3": {
+      "title": "Flexible Solutions",
+      "description": "Customized services to fit your requirements"
+    }
+  },
+  "Testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Trusted by businesses across Europe",
+    "testimonial1": {
+      "quote": "Excellent service! The team was professional and our cargo arrived safely and on time. Highly recommend for anyone needing reliable transport.",
+      "name": "John Smith",
+      "company": "ABC Logistics Inc."
+    },
+    "testimonial2": {
+      "quote": "We've been working with them for over 3 years. Their attention to detail and customer service is outstanding. Never had a single issue.",
+      "name": "Maria Garcia",
+      "company": "Euro Trade GmbH"
+    },
+    "testimonial3": {
+      "quote": "Competitive pricing and excellent communication throughout the delivery process. They truly care about their customers.",
+      "name": "David Johnson",
+      "company": "Global Imports Ltd."
+    },
+    "testimonial4": {
+      "quote": "Their GPS tracking system gives us complete visibility of our shipments. Professional drivers and modern trucks. Five stars!",
+      "name": "Anna Kowalski",
+      "company": "Polish Exports Co."
+    },
+    "testimonial5": {
+      "quote": "Fast, reliable, and cost-effective. They handled our urgent delivery perfectly and saved us from a difficult situation.",
+      "name": "Michael Brown",
+      "company": "Tech Solutions SRL"
+    },
+    "testimonial6": {
+      "quote": "Best transportation company we've worked with. Their warehousing services are also top-notch. Truly a one-stop solution.",
+      "name": "Sofia Popescu",
+      "company": "Retail Masters"
+    }
   }
 }

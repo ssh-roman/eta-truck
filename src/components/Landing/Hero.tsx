@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export default function Hero() {
   const t = useTranslations('Hero');
@@ -19,6 +20,15 @@ export default function Hero() {
             {t('title')}
           </h1>
         </motion.div>
+        <div className="container max-w-[1200px] aspect-video mx-auto flex justify-center">
+          <Image
+            src="/header/hero.jpg"
+            alt="Hero Truck"
+            width={1200}
+            height={600}
+            className="w-full h-auto mt-10 object-cover rounded-xl shadow-lg"
+          />
+        </div>
       </div>
     </div>
   );

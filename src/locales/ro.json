@@ -44,5 +44,121 @@
     "en": "Engleză",
     "ro": "Română",
     "ru": "Rusă"
+  },
+  "Features": {
+    "title": "De Ce Să Ne Alegeți",
+    "subtitle": "Oferim soluții complete de transport adaptate nevoilor dumneavoastră",
+    "feature1": {
+      "title": "Flotă Modernă",
+      "description": "Camioanele noastre sunt întreținute regulat și echipate cu cea mai recentă tehnologie pentru transport sigur"
+    },
+    "feature2": {
+      "title": "Disponibilitate 24/7",
+      "description": "Servicii non-stop pentru a satisface cerințele dumneavoastră urgente de livrare"
+    },
+    "feature3": {
+      "title": "Transport Securizat",
+      "description": "Acoperire completă de asigurare și urmărire GPS pentru liniște deplină"
+    },
+    "feature4": {
+      "title": "Acoperire Extinsă",
+      "description": "Rețea vastă acoperind rutele principale din Europa și nu numai"
+    },
+    "feature5": {
+      "title": "Prețuri Competitive",
+      "description": "Prețuri transparente fără taxe ascunse, valoare garantată"
+    },
+    "feature6": {
+      "title": "Echipă de Experți",
+      "description": "Șoferi profesioniști cu ani de experiență în logistică"
+    }
+  },
+  "Services": {
+    "title": "Serviciile Noastre",
+    "subtitle": "Soluții complete de logistică pentru fiecare nevoie de transport",
+    "service1": {
+      "title": "Transport pe Distanțe Lungi",
+      "description": "Servicii fiabile de transport interstatal și internațional"
+    },
+    "service2": {
+      "title": "Livrare Express",
+      "description": "Servicii rapide de livrare pentru marfă sensibilă la timp"
+    },
+    "service3": {
+      "title": "Transport Specializat",
+      "description": "Manipularea cu grijă a mărfurilor supradimensionate și speciale"
+    },
+    "service4": {
+      "title": "Depozitare",
+      "description": "Soluții sigure de stocare și distribuție"
+    }
+  },
+  "Stats": {
+    "title": "Impactul Nostru în Cifre",
+    "subtitle": "Ani de excelență în transport și logistică",
+    "stat1": {
+      "label": "Livrări Finalizate"
+    },
+    "stat2": {
+      "label": "Kilometri Conduși"
+    },
+    "stat3": {
+      "label": "Ani de Activitate"
+    },
+    "stat4": {
+      "label": "Satisfacția Clienților"
+    }
+  },
+  "CTA": {
+    "title": "Pregătit Să Începem?",
+    "subtitle": "Contactați-ne astăzi pentru o ofertă gratuită și descoperiți cum vă putem ajuta afacerea să crească",
+    "button1": "Solicită Ofertă",
+    "button2": "Sună Acum",
+    "box1": {
+      "title": "Răspuns Rapid",
+      "description": "Răspundem la toate solicitările în 24 de ore"
+    },
+    "box2": {
+      "title": "Consultație Gratuită",
+      "description": "Obțineți sfaturi experte pentru nevoile dumneavoastră de transport"
+    },
+    "box3": {
+      "title": "Soluții Flexibile",
+      "description": "Servicii personalizate pentru cerințele dumneavoastră"
+    }
+  },
+  "Testimonials": {
+    "title": "Ce Spun Clienții Noștri",
+    "subtitle": "De încredere pentru afaceri din toată Europa",
+    "testimonial1": {
+      "quote": "Servicii excelente! Echipa a fost profesionistă și marfa noastră a ajuns în siguranță și la timp. Recomand cu încredere pentru transport fiabil.",
+      "name": "Ion Popescu",
+      "company": "ABC Logistică SRL"
+    },
+    "testimonial2": {
+      "quote": "Lucrăm cu ei de peste 3 ani. Atenția lor la detalii și serviciul pentru clienți sunt remarcabile. Niciodată nu am avut o problemă.",
+      "name": "Maria Ionescu",
+      "company": "Euro Trade GmbH"
+    },
+    "testimonial3": {
+      "quote": "Prețuri competitive și comunicare excelentă pe tot parcursul procesului de livrare. Chiar le pasă de clienții lor.",
+      "name": "David Constantin",
+      "company": "Global Imports Ltd."
+    },
+    "testimonial4": {
+      "quote": "Sistemul lor de urmărire GPS ne oferă vizibilitate completă asupra transporturilor. Șoferi profesioniști și camioane moderne. Cinci stele!",
+      "name": "Ana Marinescu",
+      "company": "Polish Exports Co."
+    },
+    "testimonial5": {
+      "quote": "Rapid, fiabil și eficient din punct de vedere al costurilor. Au gestionat perfect livrarea noastră urgentă și ne-au salvat dintr-o situație dificilă.",
+      "name": "Mihai Dumitrescu",
+      "company": "Tech Solutions SRL"
+    },
+    "testimonial6": {
+      "quote": "Cea mai bună companie de transport cu care am lucrat. Serviciile lor de depozitare sunt de asemenea de top. Cu adevărat o soluție completă.",
+      "name": "Sofia Popa",
+      "company": "Retail Masters"
+    }
   }
 }
