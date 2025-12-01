@@ -1,0 +1,80 @@
+// storage-adapter-import-placeholder
+import { postgresAdapter } from '@payloadcms/db-postgres'
+import { sqliteAdapter } from '@payloadcms/db-sqlite'
+import { payloadCloudPlugin } from '@payloadcms/payload-cloud'
+import { lexicalEditor } from '@payloadcms/richtext-lexical'
+import path from 'path'
+import { buildConfig } from 'payload'
+import { fileURLToPath } from 'url'
+import sharp from 'sharp'
+import { s3Storage } from '@payloadcms/storage-s3'
+
+import { en } from '@payloadcms/translations/languages/en'
+import { ro } from '@payloadcms/translations/languages/ro'
+import { ru } from '@payloadcms/translations/languages/ru'
+
+import { Users } from './collections/Users'
+import { Media } from './collections/Media'
+import { News } from './collections/News'
+
+const filename = fileURLToPath(import.meta.url)
+const dirname = path.dirname(filename)
+
+export default buildConfig({
+  admin: {
+    user: Users.slug,
+    importMap: {
+      baseDir: path.resolve(dirname),
+    },
+  },
+  defaultDepth: 1,
+  i18n: {
+    translations: {ro, en, ru},
+    fallbackLanguage: 'ro',
+  },
+  localization: {
+    locales: ['ro', 'en', 'ru'],
+    defaultLocale: 'ro',
+    // contentLocales: ['ro', 'en', 'ru'], // Optional: limit locales for content
+  },
+  collections: [
+    Users,
+    Media,
+    News
+  ],
+  editor: lexicalEditor({}),
+  secret: process.env.PAYLOAD_SECRET || '',
+  typescript: {
+    outputFile: path.resolve(dirname, 'payload-types.ts'),
+  },
+  db:
+    process.env.DATABASE_TYPE === 'PG'
+      ? postgresAdapter({
+          pool: {
+            connectionString: process.env.DATABASE_URL || '',
+          },
+        })
+      : sqliteAdapter({
+          client: {
+            url: process.env.DATABASE_URL || '',
+          },
+        }),
+  sharp,
+  
+  plugins: [
+    payloadCloudPlugin(),
+    s3Storage({
+      collections: {
+        media: true,
+      },
+      bucket: process.env.S3_BUCKET || '',
+      config: {
+        credentials: {
+          accessKeyId: process.env.S3_ACCESS_KEY_ID || '',
+          secretAccessKey: process.env.S3_SECRET_ACCESS_KEY || '',
+        },
+        region: process.env.S3_REGION || '',
+      },
+    }),
+  ],
+})

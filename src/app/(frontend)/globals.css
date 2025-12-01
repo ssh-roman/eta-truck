@@ -1,0 +1,86 @@
+@import 'tailwindcss';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #FFF;
+}
+
+
+/* Add to your globals.css or component-specific CSS */
+
+/* RichText content styling - using payload-richtext class */
+.payload-richtext {
+  @apply text-[#1D4E1A];
+}
+
+.payload-richtext h1 {
+  @apply text-3xl font-bold text-[#1D4E1A] mt-8 mb-4;
+}
+
+.payload-richtext h2 {
+  @apply text-2xl font-bold text-[#1D4E1A] mt-8 mb-4;
+}
+
+.payload-richtext h3 {
+  @apply text-xl font-bold text-[#1D4E1A] mt-6 mb-3;
+}
+
+.payload-richtext h4 {
+  @apply text-lg font-bold text-[#1D4E1A] mt-6 mb-3;
+}
+.payload-richtext h5 {
+  @apply text-base font-bold text-[#1D4E1A] mt-6 mb-3;
+}
+
+.payload-richtext h6 {
+  @apply text-sm font-bold text-[#1D4E1A] mt-6 mb-3;
+}
+
+.payload-richtext p {
+  @apply text-[#1D4E1A] leading-relaxed mb-4;
+}
+
+.payload-richtext a {
+  @apply text-[#1D4E1A] underline hover:opacity-80 transition-opacity;
+}
+
+.payload-richtext strong {
+  @apply font-bold;
+}
+
+.payload-richtext em {
+  @apply italic;
+}
+
+.payload-richtext ul {
+  @apply list-disc list-inside mb-4 text-[#1D4E1A];
+}
+
+.payload-richtext ol {
+  @apply list-decimal list-inside mb-4 text-[#1D4E1A];
+}
+
+.payload-richtext li {
+  @apply mb-2;
+}
+
+.payload-richtext blockquote {
+  @apply border-l-4 border-[#1D4E1A] pl-4 italic my-4 text-[#1D4E1A]/80;
+}
+
+.payload-richtext code {
+  @apply bg-[#ECE6CC] px-2 py-1 rounded text-sm font-mono;
+}
+
+.payload-richtext pre {
+  @apply bg-[#ECE6CC] p-4 rounded-lg overflow-x-auto mb-4;
+}
+
+.payload-richtext hr {
+  @apply border-t border-[#1D4E1A]/20 my-8;
+}

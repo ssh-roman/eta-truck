@@ -1,0 +1,48 @@
+{
+  "Navbar": {
+    "logo": "ETA Truck",
+    "navlink1": "Home",
+    "navlink2": "News",
+    "navlink3": "Contact"
+  },
+  "Hero": {
+    "title": "Professional Transportation Solutions",
+    "subtitle": "Reliable trucking services for your business needs"
+  },
+  "NewsPage": {
+    "title": "Latest News",
+    "subtitle": "Stay updated with our latest news and updates",
+    "readMore": "Read More",
+    "noNews": "No news articles available at the moment",
+    "back": "Back to News"
+  },
+  "ContactPage": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with us",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "send": "Send Message",
+    "success": "Message sent successfully!",
+    "error": "Failed to send message. Please try again."
+  },
+  "Footer": {
+    "logo": "ETA Truck",
+    "description": "ETA Truck - Professional transportation solutions",
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "news": "News",
+    "contact": "Contact",
+    "followUs": "Follow Us",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "allRightsReserved": "All rights reserved"
+  },
+  "LocaleSwitcher": {
+    "label": "Language",
+    "en": "English",
+    "ro": "Romanian",
+    "ru": "Russian"
+  }
+}

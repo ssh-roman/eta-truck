@@ -1,0 +1,48 @@
+{
+  "Navbar": {
+    "logo": "ETA Truck",
+    "navlink1": "Acasă",
+    "navlink2": "Noutăți",
+    "navlink3": "Contact"
+  },
+  "Hero": {
+    "title": "ETA Trucklogistic – Partenerul dumneavoastră competent în domeniul transporturilor speciale.",
+    "subtitle": "Servicii de transport fiabile pentru nevoile afacerii tale"
+  },
+  "NewsPage": {
+    "title": "Ultimele Noutăți",
+    "subtitle": "Rămâi la curent cu ultimele noastre noutăți și actualizări",
+    "readMore": "Citește mai mult",
+    "noNews": "Nu există articole de noutăți disponibile momentan",
+    "back": "Înapoi la Noutăți"
+  },
+  "ContactPage": {
+    "title": "Contactează-ne",
+    "subtitle": "Ia legătura cu noi",
+    "name": "Nume",
+    "email": "Email",
+    "phone": "Telefon",
+    "message": "Mesaj",
+    "send": "Trimite Mesaj",
+    "success": "Mesaj trimis cu succes!",
+    "error": "Eroare la trimiterea mesajului. Te rugăm să încerci din nou."
+  },
+  "Footer": {
+    "logo": "ETA Truck",
+    "description": "ETA Truck - Soluții profesionale de transport",
+    "quickLinks": "Linkuri Rapide",
+    "home": "Acasă",
+    "news": "Noutăți",
+    "contact": "Contact",
+    "followUs": "Urmărește-ne",
+    "privacyPolicy": "Politica de Confidențialitate",
+    "termsOfService": "Termeni și Condiții",
+    "allRightsReserved": "Toate drepturile rezervate"
+  },
+  "LocaleSwitcher": {
+    "label": "Limbă",
+    "en": "Engleză",
+    "ro": "Română",
+    "ru": "Rusă"
+  }
+}
