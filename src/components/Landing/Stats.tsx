@@ -42,20 +42,21 @@ export default function Stats() {
   const [isVisible, setIsVisible] = useState(false);
 
   return (
-    <section className="py-20 px-4 bg-[#1E3A8A] text-white">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative py-28 px-4 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-950 text-white overflow-hidden">
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNiIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDUpIi8+PC9nPjwvc3ZnPg==')] opacity-30" />
+      <div className="max-w-7xl mx-auto relative z-10">
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-20"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           onViewportEnter={() => setIsVisible(true)}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
             {t('title')}
           </h2>
-          <p className="text-lg text-blue-100 max-w-2xl mx-auto">
+          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
             {t('subtitle')}
           </p>
         </motion.div>
@@ -64,17 +65,18 @@ export default function Stats() {
           {stats.map((stat, index) => (
             <motion.div
               key={stat.key}
-              className="text-center"
+              className="relative text-center p-8 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15 transition-all duration-300"
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
+              whileHover={{ scale: 1.05 }}
             >
-              <div className="text-4xl md:text-5xl font-bold mb-2">
+              <div className="text-5xl md:text-6xl font-bold mb-3 bg-gradient-to-br from-white to-blue-200 bg-clip-text text-transparent">
                 {isVisible && <Counter end={stat.end} />}
                 {stat.suffix}
               </div>
-              <div className="text-blue-100 text-sm md:text-base">
+              <div className="text-blue-100 text-base md:text-lg font-medium">
                 {t(`${stat.key}.label`)}
               </div>
             </motion.div>

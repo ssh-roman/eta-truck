@@ -27,19 +27,19 @@ export default function Services() {
   const t = useTranslations('Services');
 
   return (
-    <section className="py-20 px-4">
+    <section className="py-24 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-20"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             {t('title')}
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             {t('subtitle')}
           </p>
         </motion.div>
@@ -48,27 +48,38 @@ export default function Services() {
           {services.map((service, index) => (
             <motion.div
               key={service.key}
-              className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-shadow"
-              initial={{ opacity: 0, scale: 0.9 }}
+              className="group relative overflow-hidden rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500"
+              initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
+              whileHover={{ scale: 1.02 }}
             >
-              <div className="relative h-80 bg-gray-200">
+              <div className="relative h-96 bg-gray-200">
                 {/* Placeholder for images - replace with actual images */}
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
-                  <span className="text-white text-6xl font-bold opacity-20">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 flex items-center justify-center">
+                  <span className="text-white text-7xl font-bold opacity-10">
                     {index + 1}
                   </span>
                 </div>
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-6">
-                <h3 className="text-2xl font-bold text-white mb-2">
-                  {t(`${service.key}.title`)}
-                </h3>
-                <p className="text-white/90 text-sm">
-                  {t(`${service.key}.description`)}
-                </p>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-90 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 flex flex-col justify-end p-8">
+                <motion.div
+                  initial={{ y: 20, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  transition={{ delay: 0.2 + index * 0.1 }}
+                >
+                  <h3 className="text-3xl font-bold text-white mb-4 group-hover:text-blue-300 transition-colors duration-300">
+                    {t(`${service.key}.title`)}
+                  </h3>
+                  <p className="text-white/95 text-base leading-relaxed">
+                    {t(`${service.key}.description`)}
+                  </p>
+                </motion.div>
+              </div>
+              <div className="absolute top-4 right-4 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white font-bold text-lg">
+                0{index + 1}
               </div>
             </motion.div>
           ))}
