@@ -42,7 +42,7 @@ export default function Stats() {
   const [isVisible, setIsVisible] = useState(false);
 
   return (
-    <section className="relative py-28 px-4 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-950 text-white overflow-hidden">
+    <section className="relative py-28 px-4 bg-gradient-to-br from-[#1e2a4a] via-[#212356] to-[#1a1f3d] text-white overflow-hidden">
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNiIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDUpIi8+PC9nPjwvc3ZnPg==')] opacity-30" />
       <div className="max-w-7xl mx-auto relative z-10">
         <motion.div
@@ -65,7 +65,7 @@ export default function Stats() {
           {stats.map((stat, index) => (
             <motion.div
               key={stat.key}
-              className="relative text-center p-8 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15 transition-all duration-300"
+              className="relative text-center p-8  bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15 transition-all duration-300"
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}

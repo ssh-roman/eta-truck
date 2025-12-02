@@ -46,7 +46,7 @@ export default async function Footer({ locale }: { locale: string }) {
                             <Link href={`/${locale}/`} className="flex items-center gap-2 group cursor-pointer">
                                 <Image src="/logo/logo.svg" alt="Eta Truck Logo" width={150} height={40} className="group-hover:scale-105 transition-all duration-300" />
                             </Link>
-                            <p className="text-gray-300 text-sm whitespace-nowrap">S.C. "ETA-TRUCKLOGISTIC" S.R.L <br /> str. Biruintei 20, Ap.8, sector 1 <br /> 012128 București, Romania</p>
+                            <p className="text-gray-300 text-sm whitespace-nowrap">S.C. &quot;ETA-TRUCKLOGISTIC&quot; S.R.L <br /> str. Biruintei 20, Ap.8, sector 1 <br /> 012128 București, Romania</p>
                         </div>
                     </div>
 

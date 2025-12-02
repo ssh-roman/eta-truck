@@ -38,7 +38,7 @@ export default function Testimonials() {
 
         {/* Featured testimonial */}
         <motion.div
-          className="relative max-w-5xl mx-auto mb-16 bg-gradient-to-br from-blue-600 to-blue-800 p-10 md:p-14 rounded-3xl shadow-2xl overflow-hidden"
+          className="relative max-w-5xl mx-auto mb-16 bg-gradient-to-br from-[#212356] to-[#1a1f3d] p-10 md:p-14 shadow-2xl overflow-hidden"
           key={activeIndex}
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -53,7 +53,7 @@ export default function Testimonials() {
               ))}
             </div>
             <p className="text-2xl md:text-3xl text-white mb-8 leading-relaxed font-light">
-              "{t(`${testimonials[activeIndex].key}.quote`)}"
+              &quot;{t(`${testimonials[activeIndex].key}.quote`)}&quot;
             </p>
             <div className="flex items-center gap-5">
               <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-white font-bold text-2xl border-2 border-white/30">
@@ -76,10 +76,10 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={testimonial.key}
-              className={`group bg-white p-7 rounded-2xl shadow-lg cursor-pointer transition-all duration-300 border-2 ${
+              className={`group bg-white p-7 shadow-lg cursor-pointer transition-all duration-300 border-2 ${
                 index === activeIndex
-                  ? 'border-blue-600 shadow-xl scale-105'
-                  : 'border-transparent hover:border-blue-200 hover:shadow-xl hover:scale-102'
+                  ? 'border-[#212356] shadow-xl scale-105'
+                  : 'border-transparent hover:border-[#212356]/50 hover:shadow-xl hover:scale-102'
               }`}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -94,10 +94,10 @@ export default function Testimonials() {
                 ))}
               </div>
               <p className="text-gray-700 text-base mb-5 line-clamp-3 leading-relaxed">
-                "{t(`${testimonial.key}.quote`)}"
+                &quot;{t(`${testimonial.key}.quote`)}&quot;
               </p>
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-white font-bold text-lg shadow-md">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#252750] to-[#2b3672] flex items-center justify-center text-white font-bold text-lg shadow-md">
                   {t(`${testimonial.key}.name`).charAt(0)}
                 </div>
                 <div>

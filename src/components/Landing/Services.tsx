@@ -7,19 +7,19 @@ import Image from "next/image";
 const services = [
   {
     key: 'service1',
-    image: '/images/service1.jpg'
+    image: '/services/3camioane.jpeg'
   },
   {
     key: 'service2',
-    image: '/images/service2.jpg'
+    image: '/services/MB.jpeg'
   },
   {
     key: 'service3',
-    image: '/images/service3.jpg'
+    image: '/services/agab.jpg'
   },
   {
     key: 'service4',
-    image: '/images/service4.jpg'
+    image: '/services/FGH.jpeg'
   }
 ];
 
@@ -48,7 +48,7 @@ export default function Services() {
           {services.map((service, index) => (
             <motion.div
               key={service.key}
-              className="group relative overflow-hidden rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500"
+              className="group relative overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500"
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -57,11 +57,17 @@ export default function Services() {
             >
               <div className="relative h-96 bg-gray-200">
                 {/* Placeholder for images - replace with actual images */}
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 flex items-center justify-center">
+                <Image
+                  src={service.image}
+                  alt={t(`${service.key}.title`)}
+                  fill
+                  className="object-cover"
+                />
+                {/* <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 flex items-center justify-center">
                   <span className="text-white text-7xl font-bold opacity-10">
                     {index + 1}
                   </span>
-                </div>
+                </div> */}
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-90 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="absolute inset-0 flex flex-col justify-end p-8">
